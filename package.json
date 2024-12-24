@@ -1,0 +1,12 @@
+{
+  "name": "fm_social_links_profile",
+  "version": "1.0.0",
+  "description": "Frontend Mentor: social links profuile challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
