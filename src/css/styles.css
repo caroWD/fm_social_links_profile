@@ -698,6 +698,65 @@ video {
   color: hsl(0 0% 40% / var(--tw-text-opacity, 1));
 }
 
+.icon-before::before, .icon-after::after, .icon-outside::before, .icon-inline {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon-before::before {
+  font-family: "Font Awesome 6 Free";
+  vertical-align: middle;
+}
+
+.icon-before::after {
+  content: "" !important;
+}
+
+.icon-brands.icon-inline,.icon-brands::before,.icon-brands::after {
+  font-family: "Font Awesome 6 Brands";
+}
+
+.icon-space-xs.icon-before::before {
+  margin-right: 0.25rem;
+}
+
+.icon-space-sm.icon-before::before {
+  margin-right: 0.5rem;
+}
+
+.icon-space-md.icon-before::before {
+  margin-right: 0.75rem;
+}
+
+.icon-space-lg.icon-before::before {
+  margin-right: 1rem;
+}
+
+.icon-space-xl.icon-before::before {
+  margin-right: 1.25rem;
+}
+
+.icon-space-2xl.icon-before::before {
+  margin-right: 1.5rem;
+}
+
+.icon-space-3xl.icon-before::before {
+  margin-right: 1.75rem;
+}
+
+.icon-github::before {
+  content: "\f09b";
+}
+
+.icon-github::after {
+  content: "\f09b";
+}
+
+.\*\:\*\:relative > * > * {
+  position: relative;
+}
+
 .\*\:\*\:block > * > * {
   display: block;
 }
@@ -750,6 +809,172 @@ video {
   transition-duration: 300ms;
 }
 
+.\*\:\*\:icon-before > * > *::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 6 Free";
+  vertical-align: middle;
+}
+
+.\*\:\*\:icon-before > * > *::after {
+  content: "" !important;
+}
+
+.\*\:\*\:icon-brands > * > *.icon-inline,.\*\:\*\:icon-brands > * > *::before,.\*\:\*\:icon-brands > * > *::after {
+  font-family: "Font Awesome 6 Brands";
+}
+
+.\*\:\*\:icon-before > * > *.icon-space-xs::before {
+  margin-right: 0.25rem;
+}
+
+.\*\:\*\:icon-before > * > *.icon-space-sm::before {
+  margin-right: 0.5rem;
+}
+
+.\*\:\*\:icon-before > * > *.icon-space-md::before {
+  margin-right: 0.75rem;
+}
+
+.\*\:\*\:icon-before > * > *.icon-space-lg::before {
+  margin-right: 1rem;
+}
+
+.\*\:\*\:icon-before > * > *.icon-space-xl::before {
+  margin-right: 1.25rem;
+}
+
+.\*\:\*\:icon-before > * > *.icon-space-2xl::before {
+  margin-right: 1.5rem;
+}
+
+.\*\:\*\:icon-before > * > *.icon-space-3xl::before {
+  margin-right: 1.75rem;
+}
+
+.before\:content-\[\'\\f09b\'\]::before {
+  --tw-content: '\f09b';
+  content: var(--tw-content);
+}
+
+.\*\:\*\:before\:absolute > * > *::before {
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.\*\:\*\:before\:left-0 > * > *::before {
+  content: var(--tw-content);
+  left: 0px;
+}
+
+.\*\:\*\:before\:left-4 > * > *::before {
+  content: var(--tw-content);
+  left: 1rem;
+}
+
+.\*\:\*\:before\:left-6 > * > *::before {
+  content: var(--tw-content);
+  left: 1.5rem;
+}
+
+.\*\:\*\:before\:top-3 > * > *::before {
+  content: var(--tw-content);
+  top: 0.75rem;
+}
+
+.\*\:\*\:before\:top-2 > * > *::before {
+  content: var(--tw-content);
+  top: 0.5rem;
+}
+
+.\*\:\*\:before\:top-1 > * > *::before {
+  content: var(--tw-content);
+  top: 0.25rem;
+}
+
+.\*\:\*\:before\:top-0 > * > *::before {
+  content: var(--tw-content);
+  top: 0px;
+}
+
+.\*\:\*\:before\:top-\[0\.3rem\] > * > *::before {
+  content: var(--tw-content);
+  top: 0.3rem;
+}
+
+.\*\:\*\:before\:block > * > *::before {
+  content: var(--tw-content);
+  display: block;
+}
+
+.\*\:\*\:before\:font-fa > * > *::before {
+  content: var(--tw-content);
+  font-family: "Font Awesome 6 Free";
+}
+
+.\*\:\*\:before\:text-lg > * > *::before {
+  content: var(--tw-content);
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.\*\:\*\:before\:font-\[900\] > * > *::before {
+  content: var(--tw-content);
+  font-weight: 900;
+}
+
+.\*\:\*\:before\:not-italic > * > *::before {
+  content: var(--tw-content);
+  font-style: normal;
+}
+
+.\*\:\*\:before\:text-woodsmoke-950 > * > *::before {
+  content: var(--tw-content);
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 8% / var(--tw-text-opacity, 1));
+}
+
+.hover\:icon-github:hover::before {
+  content: "\f09b";
+}
+
+.hover\:icon-github:hover::after {
+  content: "\f09b";
+}
+
+.hover\:icon-instagram:hover::before {
+  content: "\f16d";
+}
+
+.hover\:icon-instagram:hover::after {
+  content: "\f16d";
+}
+
+.hover\:icon-linkedin:hover::before {
+  content: "\f08c";
+}
+
+.hover\:icon-linkedin:hover::after {
+  content: "\f08c";
+}
+
+.hover\:icon-linkedin-in:hover::before {
+  content: "\f0e1";
+}
+
+.hover\:icon-linkedin-in:hover::after {
+  content: "\f0e1";
+}
+
+.hover\:icon-twitter:hover::before {
+  content: "\f099";
+}
+
+.hover\:icon-twitter:hover::after {
+  content: "\f099";
+}
+
 .hover\:\*\:\*\:bg-lime-500 > * > *:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(76 96% 44% / var(--tw-bg-opacity, 1));
@@ -763,6 +988,58 @@ video {
 .hover\:\*\:text-white-200 > *:hover {
   --tw-text-opacity: 1;
   color: hsl(0 0% 86% / var(--tw-text-opacity, 1));
+}
+
+.hover\:\*\:\*\:icon-before > * > *:hover::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 6 Free";
+  vertical-align: middle;
+}
+
+.hover\:\*\:\*\:icon-before > * > *:hover::after {
+  content: "" !important;
+}
+
+.hover\:\*\:\*\:icon-brands > * > *:hover.icon-inline,.hover\:\*\:\*\:icon-brands > * > *:hover::before,.hover\:\*\:\*\:icon-brands > * > *:hover::after {
+  font-family: "Font Awesome 6 Brands";
+}
+
+.hover\:\*\:\*\:icon-before > * > *:hover.icon-space-xs::before {
+  margin-right: 0.25rem;
+}
+
+.hover\:\*\:\*\:icon-before > * > *:hover.icon-space-sm::before {
+  margin-right: 0.5rem;
+}
+
+.hover\:\*\:\*\:icon-before > * > *:hover.icon-space-md::before {
+  margin-right: 0.75rem;
+}
+
+.hover\:\*\:\*\:icon-before > * > *:hover.icon-space-lg::before {
+  margin-right: 1rem;
+}
+
+.hover\:\*\:\*\:icon-before > * > *:hover.icon-space-xl::before {
+  margin-right: 1.25rem;
+}
+
+.hover\:\*\:\*\:icon-before > * > *:hover.icon-space-2xl::before {
+  margin-right: 1.5rem;
+}
+
+.hover\:\*\:\*\:icon-space-3xl > * > *:hover.icon-before::before {
+  margin-right: 1.75rem;
+}
+
+.hover\:\*\:\*\:icon-before > * > *:hover.icon-space-3xl::before {
+  margin-right: 1.75rem;
+}
+
+.hover\:\*\:\*\:icon-space-3xl > * > *:hover.icon-after::after {
+  margin-left: 1.75rem;
 }
 
 @media (min-width: 375px) {
@@ -796,6 +1073,16 @@ video {
   .xs\:\*\:\*\:py-3 > * > * {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+  }
+
+  .xs\:\*\:\*\:before\:left-6 > * > *::before {
+    content: var(--tw-content);
+    left: 1.5rem;
+  }
+
+  .xs\:\*\:\*\:before\:top-2 > * > *::before {
+    content: var(--tw-content);
+    top: 0.5rem;
   }
 }
 

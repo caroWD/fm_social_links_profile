@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'sans': ['"Inter"', 'sans-serif'],
+      'fa': ['"Font Awesome 6 Free"'],
     },
     colors: {
       'lime': {
@@ -56,5 +57,9 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-fontawesome')({
+      version: 6
+    }),
+  ],
 }
