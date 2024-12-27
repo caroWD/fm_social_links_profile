@@ -13,23 +13,23 @@
   <link rel="stylesheet" href="./src/css/styles.css" type="text/css">
   <title>Frontend Mentor | Social links profile</title>
 </head>
-<body>
-  <main class="h-dvh flex flex-col justify-center bg-woodsmoke-950 px-4 text-white-50 font-sans text-sm">
-    <section class="bg-white-950 p-4 rounded-2xl">
+<body class="bg-woodsmoke-950">
+  <main class="max-w-md mx-auto h-dvh flex flex-col justify-center px-4 text-white-50 font-sans text-sm xs:px-6">
+    <section class="bg-white-950 p-4 rounded-2xl xs:p-6 sm:p-12">
       <header class="text-center">
-        <picture class="flex justify-center mb-4">
+        <picture class="flex justify-center mb-4 xs:mb-6">
           <img class="w-24 rounded-full" src="./src/img/avatar-jessica.jpeg" alt="Avatar Jessica Randall" width="100px" height="100px">
         </picture>
-        <hgroup class="font-semibold mb-4">
+        <hgroup class="font-semibold mb-4 xs:mb-6">
           <h1 class="text-2xl mb-2">Jessica Randall</h1>
-          <p class="font-bold text-lime-600">London, United Kingdom</p>
+          <p class="font-bold text-lime-500">London, United Kingdom</p>
         </hgroup>
       </header>
-      <article class="text-center mb-4 text-white-300">
-        <h2 class="text-xs">"Front-end developer and avid reader."</h2>
+      <article class="text-center mb-4 text-white-300 xs:mb-6">
+        <h2 class="text-xs xs:text-sm">"Front-end developer and avid reader."</h2>
       </article>
       <article class="font-semibold text-center">
-        <ul class="flex flex-col gap-3 *:*:block *:*:w-full *:*:bg-woodsmoke-900 *:*:py-2 *:*:px-4 *:*:rounded-lg">
+        <ul class="flex flex-col gap-3 *:*:block *:*:w-full *:*:bg-woodsmoke-900 *:*:py-2 *:*:px-4 *:*:rounded-lg *:*:transition-colors *:*:duration-300 hover:*:*:bg-lime-500 hover:*:*:text-woodsmoke-950 xs:gap-4 xs:*:*:py-3 xs:*:*:px-6">
           <li><a href="#">GitHub</a></li>
           <li><a href="#">Frontend Mentor</a></li>
           <li><a href="#">LinkedIn</a></li>
@@ -38,7 +38,7 @@
         </ul>
       </article>
     </section>
-    <footer class="absolute -left-0 bottom-0 w-full py-2 px-4 text-center text-[0.625rem] text-white-600 *:text-white-400">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">caroWD</a>.</footer>
+    <footer class="absolute -left-0 bottom-0 w-full py-2 px-4 text-center text-[0.625rem] text-white-600 *:text-white-400 *:transition-colors *:duration-300 hover:*:text-white-200">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/caroWD">caroWD</a>.</footer>
   </main>
 </body>
 </html>
